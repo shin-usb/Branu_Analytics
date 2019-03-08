@@ -1,0 +1,466 @@
+@import "../../_settings.scss";
+@mixin baseCenter {
+  max-width: 1280px;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+body {
+  @include baseCenter;
+  background: $white;
+}
+
+#details {
+  header {
+    @include baseCenter;
+    background: $white;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 25px 0 rgba(0,0,0,0.2);
+
+    .header_nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .headerlogo {
+      position: relative;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      width: 230px;
+      padding: 5px;
+      text-align: center;
+
+      h1 {
+        color: $branuRed;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    span {
+      display: inline-block;
+      font-family: $branuFont;
+      font-size: 30px;
+    }
+
+    .searchwindow_warpper {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+
+    form#form1 {
+      display: flex;
+      align-items: center;
+    }
+
+    input#sbox1 {
+      background: white;
+      border: 1px solid;
+      width: 430px;
+    }
+
+    input#sbtn1 {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 45px;
+      height: 45px;
+      border-radius: 3px;
+      background: #000;
+      background-image: url("../img/search.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 30px;
+      background-color: $branuRed;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .list_botton {
+      display: flex;
+      align-items: center;
+      padding: 0 30px;
+      position: relative;
+      top: -15px;
+      left: 40px;
+      display: none;
+    }
+
+    button {
+      width: 120px;
+      border: 1px solid #d1d1d1;
+      border-radius: 40px;
+      height: 40px;
+    }
+
+    button:hover {
+      border: 1px solid $branuRed;
+      background: $branuRed;
+      color: $white;
+    }
+  }
+
+  main {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+
+    .client_data_content {
+      background-color: #202C55;
+      color: #fff;
+      border-radius: 3px;
+      padding: 30px 30px 100px;
+    }
+
+    .company_logo_bg {
+      background-color: #fff;
+      width: 50px;
+      height: 50px;
+      background-size: 50px;
+      background-position: center;
+      border-radius: 30px;
+    }
+
+    .main_data_wrapp {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .left_data {
+      display: flex;
+
+      .company_logo {
+        display: inline-block;
+        padding-right: 20px;
+      }
+
+      .company_name {
+        h2 {
+          font-size: 25px;
+        }
+
+        a {
+          color: $branuRed;
+        }
+      }
+    }
+
+    .icon_imges {
+      display: flex;
+      justify-content: space-between;
+      width: 150px;
+      margin-left: 10px;
+    }
+
+    .facebook_icon_bg,
+    .instagram_icon_bg,
+    .twitter_icon_bg,
+    .web_icon_bg {
+      padding: 15px;
+      background-size: 15px;
+      background-position: center;
+      padding-top: 30px;
+    }
+
+    .rigth_date {
+      display: flex;
+      justify-content: space-between;
+      width: 500px;
+
+      .director_date_content,
+      .sales_date_content {
+        display: flex;
+      }
+
+      .director_img_wrapp,
+      .sales_img_wrapp {
+        display: inline-block;
+      }
+
+      .director_img_bg,
+      .salse_img_bg {
+        background-position: top;
+        background-size: 90px;
+        border-radius: 50px;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        margin-left: 10px;
+      }
+    }
+
+    .sub_data_wrapp {
+      padding-top: 50px;
+
+      .customer_information_box {
+        position: relative;
+        top: 0;
+        left: 0;
+        border-right: solid 1px;
+        width: 270px;
+      }
+
+      .information_content {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .customer_information_box_inner {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        p {
+          font-size: 12px;
+          border-left: solid 3px;
+          padding-left: 5px;
+        }
+
+        .information_table {
+          tr {
+            display: block;
+            margin: 5px;
+          }
+
+          th {
+            font-size: 10px;
+            display: inline-block;
+            width: 30px;
+            text-align: right;
+            margin-right: 20px;
+          }
+
+          td {
+            font-size: 14px;
+            display: inline-block;
+          }
+        }
+      }
+
+      .plan_list {
+        width: 370px;
+
+        .introduction_service_inner {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        .cms_introduction,
+        .operation_plan_introduction,
+        .other_service {
+          display: flex;
+        }
+
+        .title_wrpper p {
+          border-left: solid 3px;
+          padding-left: 5px;
+          font-size: 12px;
+        }
+
+        .introduction_service_inner p {
+          margin-right: 10px;
+          margin-top: 10px;
+        }
+      }
+
+      .site_thumbnail_img {
+        .thumbnail_img_wrapp {
+          width: 300px;
+        }
+
+        .thumbnail_img_bg {
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 300px;
+          padding: 100px;
+          display: block;
+        }
+      }
+    }
+
+    .rank_content {
+      position: relative;
+      top: -70px;
+      left: 0;
+
+      .rank_content_inner {
+        width: 800px;
+        margin: auto;
+        background-color: $white;
+        color: #000;
+        padding: 30px;
+        box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+      }
+
+      .rank_box {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+
+        .category_rank_box {
+          border-right: solid 1px #d1d1d1;
+          border-left: solid 1px #d1d1d1;
+          width: 260px;
+        }
+
+        .title_wrpper {
+          p {
+            font-size: 16px;
+          }
+        }
+
+        .text_wrpper {
+          p {
+            font-size: 32px;
+            font-weight: 700;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+
+    .analysis_data_content {
+      width: 800px;
+      margin: auto;
+      .analysis_table_wrapper {
+        padding-top: 30px;
+      }
+      .analysis_table_inner {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .title_inner{
+        border-left: solid 3px;
+        h3{
+          font-size: 24px;
+          padding-left: 10px;
+          font-weight: 700;
+        }
+      }
+      dl.analysis_data {
+        text-align: center;
+        width: 170px;
+        padding-top: 30px;
+        dt {
+          font-size: 12px;
+        }
+        dd {
+          font-size: 16px;
+          font-weight: 700;
+          padding-top: 10px;
+        }
+      }
+    }
+
+    .seo_keyword_content{
+      width: 800px;
+      margin: auto;
+    .seo_keyword_wrapp{
+      padding-top: 60px;
+    }
+    .title_inner{
+      border-left: solid 3px;
+      h3{
+        font-size: 24px;
+        padding-left: 10px;
+        font-weight: 700;
+      }
+    }
+    ul.keyword_lis {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    position: relative;
+    top:0;
+    left: 0;
+    }
+    li:nth-child(-n+3)::after{
+      content: "/";
+      position: relative;
+      top: 0;
+      left: 50px;
+    }
+  }
+
+  .graph_data_content{
+    width: 800px;
+    margin: auto;
+    .graph_data_wrapp{
+     padding-top: 60px;
+    }
+    .title_inner{
+      border-left: solid 3px;
+      h3{
+        font-size: 24px;
+        padding-left: 10px;
+        font-weight: 700;
+      }
+    }
+  }
+
+
+.access_map_content{
+  width: 800px;
+  margin: auto;
+  .access_map_wrapper{
+    padding-top: 60px;
+  }
+  .title_inner{
+    border-left: solid 3px;
+    h3{
+      font-size: 24px;
+      padding-left: 10px;
+      font-weight: 700;
+    }
+  }
+}
+
+.access_map{
+  padding-top: 60px;
+  .text_wrpper {
+    padding: 20px 20px 20px 0;
+    display: flex;
+    justify-content: flex-end;
+    p{
+      color: $branuRed;
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+}

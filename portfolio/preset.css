@@ -1,0 +1,517 @@
+/*!
+ * ress.css 窶｢ v1.1.1
+ * MIT License
+ * github.com/filipelinhares/ress
+ *
+ * Author: t.niiru
+ * Date: 20161115
+ * project: flamingo & Parabola;
+ */
+
+/* # =================================================================
+   # Global selectors
+   # ================================================================= */
+html {
+  box-sizing: border-box;
+  overflow-y: scroll; /* All browsers without overlaying scrollbars */
+  -webkit-text-size-adjust: 100%; /* iOS 8+ */
+  /* font-family: 'Noto Sans Japanese', "Avenir Next", Verdana, "繝偵Λ繧ｮ繝手ｧ偵ざ Pro W3", "Hiragino Kaku Gothic Pro", "貂ｸ繧ｴ繧ｷ繝�け", "Yu Gothic", "繝｡繧､繝ｪ繧ｪ", Meiryo, Osaka, sans-serif; */
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+::before,
+::after {
+  text-decoration: inherit; /* Inherit text-decoration and vertical align to ::before and ::after pseudo elements */
+  vertical-align: inherit;
+}
+
+/* Remove margin, padding of all elements and set background-no-repeat as default */
+* {
+  background-repeat: no-repeat; /* Set `background-repeat: no-repeat` to all elements */
+  padding: 0; /* Reset `padding` and `margin` of all elements */
+  margin: 0;
+}
+
+/* # =================================================================
+   # General elements
+   # ================================================================= */
+
+/* Add the correct display in iOS 4-7.*/
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+hr {
+  overflow: visible; /* Show the overflow in Edge and IE */
+}
+
+/*
+* Correct `block` display not defined for any HTML5 element in IE 8/9
+* Correct `block` display not defined for `details` or `summary` in IE 10/11
+* and Firefox
+* Correct `block` display not defined for `main` in IE 11
+*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+summary {
+  display: list-item; /* Add the correct display in all browsers */
+}
+
+small {
+  font-size: 80%; /* Set font-size to 80% in `small` elements */
+}
+
+[hidden],
+template {
+  display: none; /* Add the correct display in IE */
+}
+
+abbr[title] {
+  border-bottom: 1px dotted; /* Add a bordered underline effect in all browsers */
+  text-decoration: none; /* Remove text decoration in Firefox 40+ */
+}
+
+a {
+  background-color: transparent; /* Remove the gray background on active links in IE 10 */
+  -webkit-text-decoration-skip: objects; /* Remove gaps in links underline in iOS 8+ and Safari 8+ */
+}
+
+a:active,
+a:hover {
+  outline-width: 0; /* Remove the outline when hovering in all browsers */
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace; /* Specify the font family of code elements */
+}
+
+/* b,
+strong {
+  font-weight: bolder; Correct style set to `bold` in Edge 12+, Safari 6.2+, and Chrome 18+
+} */
+
+dfn {
+  font-style: italic; /* Address styling not present in Safari and Chrome */
+}
+
+/* Address styling not present in IE 8/9 */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/* https://gist.github.com/unruthless/413930 */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25rem;
+}
+
+sup {
+  top: -0.5rem;
+}
+
+/* # =================================================================
+   # Forms
+   # ================================================================= */
+
+input {
+  border-radius: 0;
+}
+
+/* Apply cursor pointer to button elements */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"],
+[role="button"] {
+  cursor: pointer;
+}
+
+/* Replace pointer cursor in disabled elements */
+[disabled] {
+  cursor: default;
+}
+
+[type="number"] {
+  width: auto; /* Firefox 36+ */
+}
+
+[type="search"] {
+  -webkit-appearance: textfield; /* Safari 8+ */
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; /* Safari 8 */
+}
+
+textarea {
+  overflow: auto; /* Internet Explorer 11+ */
+  resize: vertical; /* Specify textarea resizability */
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit; /* Specify font inheritance of form elements */
+}
+
+optgroup {
+  font-weight: bold; /* Restore the font weight unset by the previous rule. */
+}
+
+button {
+  overflow: visible; /* Address `overflow` set to `hidden` in IE 8/9/10/11 */
+}
+
+/* Remove inner padding and border in Firefox 4+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: 0;
+  padding: 0;
+}
+
+/* Replace focus style removed in the border reset above */
+button:-moz-focusring,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  outline: 1px dotted ButtonText;
+}
+
+button,
+html [type="button"], /* Prevent a WebKit bug where (2) destroys native `audio` and `video`controls in Android 4 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* Correct the inability to style clickable types in iOS */
+}
+
+button,
+select {
+  text-transform: none; /* Firefox 40+, Internet Explorer 11- */
+}
+
+/* Remove the default button styling in all browsers */
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  border-style: none;
+  color: inherit;
+}
+
+/* Style select like a standard input */
+
+legend {
+  border: 0; /* Correct `color` not being inherited in IE 8/9/10/11 */
+  color: inherit; /* Correct the color inheritance from `fieldset` elements in IE */
+  display: table; /* Correct the text wrapping in Edge and IE */
+  max-width: 100%; /* Correct the text wrapping in Edge and IE */
+  white-space: normal; /* Correct the text wrapping in Edge and IE */
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* Correct the inability to style clickable types in iOS and Safari */
+  font: inherit; /* Change font properties to `inherit` in Chrome and Safari */
+}
+
+[type="search"] {
+  -webkit-appearance: textfield; /* Correct the odd appearance in Chrome and Safari */
+  outline-offset: -2px; /* Correct the outline style in Safari */
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: none transparent;
+  vertical-align: middle;
+  font-size: inherit;
+  color: inherit;
+  box-sizing: content-box;
+  text-indent: 0.01px;
+  text-overflow: '';
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+/* # =================================================================
+   # Specify media element style
+   # ================================================================= */
+
+img {
+  border-style: none; /* Remove border when inside `a` element in IE 8/9/10 */
+}
+
+/* Add the correct vertical alignment in Chrome, Firefox, and Opera */
+progress {
+  vertical-align: baseline;
+}
+
+svg:not(:root) {
+  overflow: hidden; /* Internet Explorer 11- */
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* Internet Explorer 11+, Windows Phone 8.1+ */
+}
+
+/* # =================================================================
+   # Accessibility
+   # ================================================================= */
+
+/* Hide content from screens but not screenreaders */
+@media screen {
+  [hidden~="screen"] {
+    display: inherit;
+  }
+  [hidden~="screen"]:not(:active):not(:focus):not(:target) {
+    position: absolute !important;
+    clip: rect(0 0 0 0) !important;
+  }
+}
+
+/* Specify the progress cursor of updating elements */
+[aria-busy="true"] {
+  cursor: progress;
+}
+
+/* Specify the pointer cursor of trigger elements */
+[aria-controls] {
+  cursor: pointer;
+}
+
+/* Specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements */
+[aria-disabled] {
+  cursor: default;
+}
+
+/* # =================================================================
+   # Selection
+   # ================================================================= */
+
+/* Specify text selection background color and omit drop shadow */
+
+::-moz-selection {
+  background-color: #b3d4fc; /* Required when declaring ::selection */
+  color: #000;
+  text-shadow: none;
+}
+
+::selection {
+  background-color: #b3d4fc; /* Required when declaring ::selection */
+  color: #000;
+  text-shadow: none;
+}
+
+
+/*-----------------------------------------------
+  original
+-------------------------------------------------*/
+html {
+  position: relative;
+  font-size: 62.5%;
+  height: 100%;
+  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", eatYuG, Meiryo, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  color: #000;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+/* font */
+h1,h2,h3,h4,h5,h6{
+  font-size:1.8rem;
+}
+h1{
+  font-weight:900;
+}
+h2{
+  font-weight:400;
+}
+h3,h4,h5,h6{
+  font-weight:300;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  outline-style: none;
+}
+a:hover{
+  opacity: .7;
+}
+
+/* bloglink color */
+.post_body a {
+  color: #616edc;
+}
+
+/* sectionlink color */
+.editable a {
+  color: #616edc;
+}
+
+/* list */
+ul,ol{
+  /* margin-left:3rrem; */
+  list-style: none;
+}
+
+/* table */
+table{
+  border-collapse:collapse;
+}
+
+/* form */
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="search"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus{
+  outline:none;
+  outline-offset: 0;
+}
+
+input[type="button"]:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="file"]:focus,
+button:focus{
+  outline:none;
+}
+
+fieldset{
+  border: none;
+}
+
+/* 
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+input[type="date"],
+select,
+textarea{
+  padding:4px 8px;
+  font-size:1.4rem;
+  border:1px solid #d9d9d9;
+  box-sizing:border-box;
+}
+input[type="text"]:hover,
+input[type="tel"]:hover,
+input[type="email"]:hover,
+input[type="search"]:hover,
+input[type="password"]:hover,
+input[type="date"]:hover,
+select:hover,
+textarea:hover{
+  border:1px solid #b9b9b9;
+  border-top:1px solid #a0a0a0;
+}
+select{
+  cursor:pointer;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button{
+  padding:4px 8px;
+  font-size:1.4rem;
+  cursor:pointer;
+  border-radius:3px;
+  background:#ddd;
+  box-sizing:border-box;
+}
+input[type="button"],
+button{
+  border:1px solid #d9d9d9;
+  background:#f4f4f4;
+  color:#515151;
+}
+input[type="button"]:hover,
+button:hover{
+  border:1px solid #c6c6c6;
+  color:#191919;
+}
+input[type="button"]:active,
+button:active{
+  border:1px solid #ccc;
+  background:#ececec;
+  color:#333;
+}
+input[type="submit"]{
+  color:#fff;
+  background:#4285f4;
+  text-shadow:0 -1px 0 rgba(0,0,0,0.2);
+}
+input[type="submit"]:hover{
+  background:#3b78e7;
+}
+input[type="submit"]:active{
+  background:#3367d6;
+}
+input[type="reset"]{
+  color:#fff;
+  background:#b3b3b3;
+  text-shadow:0 -1px 0 rgba(0,0,0,0.2);
+}
+input[type="reset"]:hover{
+  background:#898e96;
+}
+input[type="reset"]:active{}
+
+ */

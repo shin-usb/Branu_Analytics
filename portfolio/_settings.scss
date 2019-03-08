@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+$use_html5: true;
+
+// font
+// $fontSize_browser: 9px;
+
+$fontSize: 1.6rem;
+$fontColor: #666;
+$titleFontColor: #000;
+$subFontColor: #929292;
+$baseLineHeight: 1.7;
+$titleBaseLineHeight: 1.4;
+$fontWeight: 300;
+
+//color
+$white: #fff;
+$black: #000;
+$gray5: darken($white, 5%);  //#f2f2f2
+$gray10: darken($white, 13%); //#dedede
+$gray20: darken($white, 20%); //#ccc
+$gray30: darken($white, 27%); //#bbb
+$gray40: darken($white, 40%); //#999
+$gray60: darken($white, 60%); //#666
+$gray80: darken($white, 80%); //#333
+$gray85: darken($white, 83%); //#2b2b2b
+$eatBlue: #3e9bc4;
+$mapOverlay: rgba(241, 241, 241, 0.5);
+$defCategory: #ff5721;
+$branuRed: #d3434a;
+
+$gothic: YakuHanJP, "Helvetica Neue", Roboto, "Droid Sans", "Noto Sans Japanese", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, Meiryo, sans-serif;
+$serif: YakuHanMP, "Times New Roman", "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Sawarabi Mincho", Meiryo, serif;
+
+$branuFont: europa, sans-serif;
+
+
+// breakpoint
+// @media #{$bp_min-bp1}のインデントの中にスタイルを記述
+$phone: 480px;
+$tablet: 768px;
+$pc : 1024px;
+$pc-width: 1200px;
+$modal-width: 850px;
+
+//スマホ用
+//480px以下
+$phone_style_max: "only screen and (max-width:" + $phone + ")";
+//480px以上
+$phone_style_min: "only screen and (min-width:" + ($phone + 1px) + ")";
+
+//タブレット用
+//768px以下
+$tablet_style_max: "only screen and (max-width:" + $tablet + ")";
+//768px以上
+$tablet_style_min: "only screen and (min-width:" + $tablet + ")";
+
+//タブレット用（横）
+//768px以上1024px以下
+$tablet_width_style: "only screen and (min-width:" + ($tablet + 1px) + ") and (max-width:" + $pc + ")";
+
+//PC用
+//1024px以下
+$pc_style_max: "only screen and (max-width:" + $pc + ")";
+//1024px以上
+$pc_style_min: "only screen and (min-width:" + ($pc + 1px) + ")";
+
+//PC用
+//1200px以下
+$pc-w_style_max: "only screen and (max-width:" + $pc-width + ")";
+//1200px以上
+$pc-w_style_min: "only screen and (min-width:" + ($pc-width + 1px) + ")";
+
+//modal用
+//851px以上
+$madal-style_max: "only screen and (max-width:" + $modal-width+ ")";
+
+// z-index(右側が上層)
+// z-index: index($z, linkbox) で呼び出し
+$z : linkbox;
+
+//.image-frameのスタイル
+//image-frame > div
+@mixin frame {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	padding-top: 60%;
+}
+//image-frame > div img { width:100%; }
+@mixin frameImgW {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+//image-frame > div img { height:100%; }
+@mixin frameImgH {
+	max-width: none;
+	width: auto;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+//真ん中
+@mixin itemCenter {
+	position: absolute !important;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
