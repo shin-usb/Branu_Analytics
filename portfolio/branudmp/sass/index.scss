@@ -1,5 +1,4 @@
 @import "../../_settings.scss";
-
 @mixin baseCenter {
   max-width: 1280px;
   width: 1280px;
@@ -7,20 +6,22 @@
 }
 
 body {
-    @include baseCenter;
-    background:$white;
+  @include baseCenter;
+  background: $white;
 }
-header{
+
+header {
   @include baseCenter;
   height: auto;
   background: $white;
   padding: 0;
   position: relative;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   right: 0;
   bottom: 0;
-  .headerlogo{
+
+  .headerlogo {
     position: relative;
     top: 0;
     left: 0;
@@ -30,15 +31,18 @@ header{
     width: 300px;
     padding: 5px;
     text-align: center;
-    &:hover{
+
+    &:hover {
       opacity: 0.8;
     }
   }
+
   span {
     display: inline-block;
     font-family: $branuFont;
     font-size: 30px;
   }
+
   .searchwindow_warpper {
     position: relative;
     top: 0;
@@ -47,113 +51,130 @@ header{
     justify-content: center;
     align-items: center;
   }
+
   .section_searchwindow {
     height: 80px;
     display: flex;
     align-items: center;
   }
+
   form#form1 {
     height: 80px;
-
   }
+
   input#sbox1 {
     background: white;
     border: 1px solid;
     width: 430px;
   }
+
   input#sbtn1 {
     position: absolute;
-    top:0;
+    top: 0;
     width: 45px;
     height: 45px;
     border-radius: 3px;
     background: #000;
-    background-image: url(../img/search.png);
+    background-image: url("../img/search.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30px;
     background-color: $branuRed;
-    &:hover{
+
+    &:hover {
       opacity: 0.8;
     }
   }
 }
 
 .maincontents.content_wrpper {
-      @include baseCenter;
+  @include baseCenter;
+
   .list_link_contents {
-      width: 1000px;
-      margin: auto;
-      position: relative;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: $white;
-      box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-      &:hover{
-        opacity: 0.8;
-      }
-    .section_list_link{
+    width: 1000px;
+    margin: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    .section_list_link {
       position: relative;
       top: 0;
       left: 0;
       display: flex;
       justify-content: center;
     }
-    .section_logo_bg{
+
+    .section_logo_bg {
       padding: 100px;
       background-size: 200px;
       background-position: center;
       background-repeat: no-repeat;
     }
+
     .text_warpper {
       display: flex;
       align-items: center;
     }
-    h2{
+
+    h2 {
       font-size: 50px;
       font-family: $branuFont;
-      color:$branuRed;
+      color: $branuRed;
       font-weight: 700;
     }
-    .list_link_botton{
+
+    .list_link_botton {
       text-align: center;
       position: relative;
       top: -60px;
       left: 0;
-      &:hover{
+
+      &:hover {
         opacity: 0.99;
       }
     }
+
     button {
-    width: 100px;
-    border: 1px solid $branuRed;
-    background: $branuRed;
-    color: $white;
-    border-radius: 40px;
-    height: 30px;
+      width: 100px;
+      border: 1px solid $branuRed;
+      background: $branuRed;
+      color: $white;
+      border-radius: 40px;
+      height: 30px;
     }
   }
-  .sales_search_contents{
-    @include baseCenter
-    padding-top: 60px;
-    .sales_search_wrpper{
+
+  .sales_search_contents {
+    @include baseCenter padding-top: 60px;
+
+    .sales_search_wrpper {
       position: relative;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
     }
+
     .text_warpper {
-    display: inline-block;
-    padding-bottom: 50px;
+      display: inline-block;
+      padding-bottom: 50px;
     }
+
     h3 {
-    font-size: 30px;
-    color: #6d6d6d;
+      font-size: 30px;
+      color: #6d6d6d;
     }
-    ul.sales_representative_list{
+
+    ul.sales_representative_list {
       display: flex;
       justify-content: space-between;
       height: auto;
@@ -161,23 +182,27 @@ header{
       width: 900px;
       margin: auto;
     }
+
     li.staff {
-    display: flex;
-    background: #fff;
-    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
-    margin: 0 60px 30px 0px;
+      display: flex;
+      background: #fff;
+      box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+      margin: 0 60px 30px 0;
     }
-    a{
+
+    a {
       display: inline-flex;
     }
+
     .salse_bg {
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: 150%;
-    background-position: 30% 5%;
-    width: 60px;
-    height: 50px;
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: 150%;
+      background-position: 30% 5%;
+      width: 60px;
+      height: 50px;
     }
+
     span {
       position: relative;
       top: 10px;
@@ -185,108 +210,138 @@ header{
       font-size: 20px;
       padding: 10px;
       color: #000;
-      }
-  }
- .purpose_search_contents,.industry_search_contents,.area_search_contents{
-   @include baseCenter
-  .purpose_search_wrpper,.industry_search_wrpper,.area_search_wrpper{
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-  .text_warpper {
-  display: inline-block;
-  padding-bottom: 50px;
-  padding-top: 10px;
-  width: 180px;
-  text-align: center;
-  }
-  h3 {
-  font-size: 30px;
-  color: #6d6d6d;
-  }
-  ul.purpose_box_list,ul.industry_box_list,ul.area_box_list{
-    display: flex;
-    justify-content: space-between;
-    height: auto;
-    flex-wrap: wrap;
-    width: 1020px;
-    margin: auto;
-  }
-  li.purpose_box,li.industry_box,li.area_box{
-    width: auto;
-    padding: 10px;
-  }
-  .purpose_bg,.industry_bg,.area_bg{
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: 150%;
-    background-position: center;
-    width: 180px;
-    height: 180px;
-    border-radius: 10px;
-    &:hover{
-      opacity: 0.8;
     }
+  }
+
+  .area_search_contents,
+  .industry_search_contents,
+  .purpose_search_contents {
+    @include baseCenter .purpose_search_wrpper,.industry_search_wrpper,.area_search_wrpper {
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
     }
-    span{
+
+    .text_warpper {
       display: inline-block;
-      & a{
-      font-size: 25px;
+      padding-bottom: 50px;
+      padding-top: 10px;
+      width: 180px;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 30px;
       color: #6d6d6d;
-        }
     }
- }
-.recommend_content{
-  @include baseCenter
-  .relase_wrpper,.conversion_rate_wrpper,.updated_user_wrpper{
-    position: relative;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-  }
-  .text_warpper{
-  display: inline-block;
-  padding-bottom: 50px;
-  padding-top: 10px;
-  width: 300px;
-  text-align: center;
-  }
-  h3 {
-  font-size: 30px;
-  color: #6d6d6d;
-  }
-  ul.relase_list,ul.conversion_rate_list,.updated_user_list{
-    display: flex;
-    justify-content: space-between;
-    height: auto;
-    flex-wrap: wrap;
-    width: 1200px;
-    margin: auto;
-  }
-  li.relase_box,li.conversion_rate_box,.updated_user_box{
-    width: 280px;;
-    padding: 10px;
-  }
-  .relase_bg,.conversion_bg,.updated_user_bg{
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: 150%;
-    background-position: center;
-    width: 260px;
-    height: 190px;
-    &:hover{
-      opacity: 0.8;
+
+    ul.area_box_list,
+    ul.industry_box_list,
+    ul.purpose_box_list {
+      display: flex;
+      justify-content: space-between;
+      height: auto;
+      flex-wrap: wrap;
+      width: 1020px;
+      margin: auto;
     }
+
+    li.area_box,
+    li.industry_box,
+    li.purpose_box {
+      width: auto;
+      padding: 10px;
     }
-    .introduction_service{
+
+    .area_bg,
+    .industry_bg,
+    .purpose_bg {
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: 150%;
+      background-position: center;
+      width: 180px;
+      height: 180px;
+      border-radius: 10px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    span {
+      display: inline-block;
+
+      & a {
+        font-size: 25px;
+        color: #6d6d6d;
+      }
+    }
+  }
+
+  .recommend_content {
+    @include baseCenter .relase_wrpper,.conversion_rate_wrpper,.updated_user_wrpper {
+      position: relative;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+
+    .text_warpper {
+      display: inline-block;
+      padding-bottom: 50px;
+      padding-top: 10px;
+      width: 300px;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 30px;
+      color: #6d6d6d;
+    }
+
+    .updated_user_list,
+    ul.conversion_rate_list,
+    ul.relase_list {
+      display: flex;
+      justify-content: space-between;
+      height: auto;
+      flex-wrap: wrap;
+      width: 1200px;
+      margin: auto;
+    }
+
+    .updated_user_box,
+    li.conversion_rate_box,
+    li.relase_box {
+      width: 280px;
+      padding: 10px;
+    }
+
+    .conversion_bg,
+    .relase_bg,
+    .updated_user_bg {
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: 150%;
+      background-position: center;
+      width: 260px;
+      height: 190px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .introduction_service {
       display: flex;
       justify-content: space-evenly;
       padding-bottom: 5px;
-      & span{
+
+      & span {
         border: 1.5px solid #d3434a;
         border-radius: 30px;
         width: 60px;
@@ -298,157 +353,176 @@ header{
         display: inline-block;
       }
     }
+
     dl {
-    display: flex;
-    flex-wrap: wrap;
+      display: flex;
+      flex-wrap: wrap;
     }
+
     .information_text_warpper {
-    padding-right: 6px;
+      padding-right: 6px;
     }
+
     .information_company_name {
       position: relative;
-      &::before{
-          content: "";
-          position: absolute;
-          top:0;
-          width: 15px;
-          height: 15px;
-          border-radius: 3px;
-          background: #000;
-          background-image: url(../img/search.png);
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: 15px;
-          background-color: $branuRed;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 15px;
+        height: 15px;
+        border-radius: 3px;
+        background: #000;
+        background-image: url("../img/search.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-color: $branuRed;
       }
     }
+
     .information_industry {
       position: relative;
-      &::before{
-          content: "";
-          position: absolute;
-          top:0;
-          width: 15px;
-          height: 15px;
-          border-radius: 3px;
-          background: #000;
-          background-image: url(../img/search.png);
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: 15px;
-          background-color: $branuRed;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 15px;
+        height: 15px;
+        border-radius: 3px;
+        background: #000;
+        background-image: url("../img/search.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-color: $branuRed;
       }
     }
+
     .information_relase_date {
       position: relative;
-      &::before{
-          content: "";
-          position: absolute;
-          top:0;
-          width: 15px;
-          height: 15px;
-          border-radius: 3px;
-          background: #000;
-          background-image: url(../img/search.png);
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: 15px;
-          background-color: $branuRed;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 15px;
+        height: 15px;
+        border-radius: 3px;
+        background: #000;
+        background-image: url("../img/search.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-color: $branuRed;
       }
     }
+
     .information_annualsales {
       position: relative;
-      &::before{
-          content: "";
-          position: absolute;
-          top:0;
-          width: 15px;
-          height: 15px;
-          border-radius: 3px;
-          background: #000;
-          background-image: url(../img/search.png);
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: 15px;
-          background-color: $branuRed;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 15px;
+        height: 15px;
+        border-radius: 3px;
+        background: #000;
+        background-image: url("../img/search.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-color: $branuRed;
       }
     }
+
     .information_people {
       position: relative;
-      &::before{
-          content: "";
-          position: absolute;
-          top:0;
-          width: 15px;
-          height: 15px;
-          border-radius: 3px;
-          background: #000;
-          background-image: url(../img/search.png);
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: 15px;
-          background-color: $branuRed;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 15px;
+        height: 15px;
+        border-radius: 3px;
+        background: #000;
+        background-image: url("../img/search.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-color: $branuRed;
       }
     }
+
     .information_address {
       position: relative;
-      &::before{
-          content: "";
-          position: absolute;
-          top:0;
-          width: 15px;
-          height: 15px;
-          border-radius: 3px;
-          background: #000;
-          background-image: url(../img/search.png);
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: 15px;
-          background-color: $branuRed;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 15px;
+        height: 15px;
+        border-radius: 3px;
+        background: #000;
+        background-image: url("../img/search.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-color: $branuRed;
       }
     }
+
     .information_plan {
       position: relative;
-      &::before{
-          content: "";
-          position: absolute;
-          top:0;
-          width: 15px;
-          height: 15px;
-          border-radius: 3px;
-          background: #000;
-          background-image: url(../img/search.png);
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: 15px;
-          background-color: $branuRed;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 15px;
+        height: 15px;
+        border-radius: 3px;
+        background: #000;
+        background-image: url("../img/search.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-color: $branuRed;
       }
     }
+
     .information_rank {
       position: relative;
-      &::before{
-          content: "";
-          position: absolute;
-          top:0;
-          width: 15px;
-          height: 15px;
-          border-radius: 3px;
-          background: #000;
-          background-image: url(../img/search.png);
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: 15px;
-          background-color: $branuRed;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 15px;
+        height: 15px;
+        border-radius: 3px;
+        background: #000;
+        background-image: url("../img/search.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-color: $branuRed;
       }
     }
+
     p {
       font-size: 12px;
       color: #868585;
       padding-left: 20px;
     }
-    .information_plan p{
+
+    .information_plan p {
       padding-right: 10px;
     }
- }
-
+  }
 }
