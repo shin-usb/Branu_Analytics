@@ -131,6 +131,12 @@ header {
           left: 220px; }
         .list_maincontents .section_filtered_search_box .select_box_inner .text_warpper p:hover {
           opacity: 0.5; }
+        .list_maincontents .section_filtered_search_box .select_box_inner .text_warpper p span#span1 {
+          width: 110px;
+          display: inline-flex;
+          overflow: scroll;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
   .list_maincontents .section_service_search_box {
     position: sticky;
     top: 314px;

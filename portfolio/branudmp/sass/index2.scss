@@ -150,6 +150,15 @@ header {
           &:hover {
             opacity: 0.5;
           }
+          span#span1 {
+            width: 110px;
+            display: inline-flex;
+            overflow: scroll;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+
         }
       }
     }
