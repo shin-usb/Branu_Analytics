@@ -10,8 +10,11 @@
   <link rel="stylesheet" href="css/index2.css">
   <link rel="stylesheet" href="https://use.typekit.net/maf6dzs.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/modal.css">
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" ></script>
+  <script src="js/modal.js" defer></script>
 </head>
 
 <body>
@@ -53,12 +56,216 @@
                   <div class="select_box_inner">
                     <div class="text_warpper">
                       <div class="text_inner">
-                        <p>担当で選ぶ</p>
+                        <p id="btn_open">業種で選ぶ：<span id="span1"></span></p>
                       </div>
                     </div>
                   </div>
                 </a>
               </div>
+              <div id="modal">
+	<div id="modal_content">
+    <div class="data">
+    <div class="IndustrySelection">
+      <div class="title_wraap">
+        <div class="title_inner">
+          <ul>
+            <li class="ChangeElem_Btn">土木</li>
+            <li class="ChangeElem_Btn">建築</li>
+            <li class="ChangeElem_Btn">設備</li>
+            <li class="ChangeElem_Btn">電気通信</li>
+            <li class="ChangeElem_Btn">とび・土工</li>
+            <li class="ChangeElem_Btn">鋼構造物</li>
+            <li class="ChangeElem_Btn">設計・デザイン</li>
+            <li class="ChangeElem_Btn">その他</li>
+          </ul>
+        </div>
+      </div>
+      <div class="Selectbox ChangeElem_Panel">
+        <div class="Selectall">
+          <input type="checkbox" id="category_all" name="category_all">
+          <label for="category_all">全てにチェックをつける</label>
+        </div>
+        <div class="Individualselection" id="categories">
+          <form name="form1">
+            <input type="checkbox" name="category_01" id="category_01" value="足場工事" class="category">
+            <label for="category_01">足場工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="しゅんせつ工事" class="category">
+            <label for="category_02">しゅんせつ工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="石工事" class="category">
+            <label for="category_03">石工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="造園工事" class="category">
+            <label for="category_04">造園工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="舗装工事" class="category">
+            <label for="category_05">舗装工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="土木工事" class="category">
+            <label for="category_06">土木工事</label>
+          </form>
+        </div>
+        <div class="Decision btn_close">
+          <input type="submit" value="決定" onclick="clickBtn1()"/>
+        </div>
+      </div>
+
+      <div class="Selectbox ChangeElem_Panel">
+        <div class="Selectall">
+          <input type="checkbox" id="category_all" name="category_all">
+          <label for="category_all">全てにチェックをつける</label>
+        </div>
+        <div class="Individualselection" id="categories">
+          <form name="form1">
+            <input type="checkbox" name="category_01" id="category_01" value="足場工事" class="category">
+            <label for="category_01">足場工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="しゅんせつ工事" class="category">
+            <label for="category_02">しゅんせつ工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="石工事" class="category">
+            <label for="category_03">石工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="造園工事" class="category">
+            <label for="category_04">造園工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="舗装工事" class="category">
+            <label for="category_05">舗装工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="土木工事" class="category">
+            <label for="category_06">土木工事</label>
+          </form>
+        </div>
+        <div class="Decision btn_close">
+          <input type="submit" value="決定" onclick="clickBtn1()">
+        </div>
+      </div>
+
+      <div class="Selectbox ChangeElem_Panel">
+        <div class="Selectall">
+          <input type="checkbox" id="category_all" name="category_all">
+          <label for="category_all">全てにチェックをつける</label>
+        </div>
+        <div class="Individualselection" id="categories">
+          <form name="form1">
+            <input type="checkbox" name="category_01" id="category_01" value="足場工事" class="category">
+            <label for="category_01">足場工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="しゅんせつ工事" class="category">
+            <label for="category_02">しゅんせつ工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="石工事" class="category">
+            <label for="category_03">石工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="造園工事" class="category">
+            <label for="category_04">造園工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="舗装工事" class="category">
+            <label for="category_05">舗装工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="土木工事" class="category">
+            <label for="category_06">土木工事</label>
+          </form>
+        </div>
+        <div class="Decision btn_close">
+          <input type="submit" value="決定" onclick="clickBtn1()">
+        </div>
+      </div>
+
+      <div class="Selectbox ChangeElem_Panel">
+        <div class="Selectall">
+          <input type="checkbox" id="category_all" name="category_all">
+          <label for="category_all">全てにチェックをつける</label>
+        </div>
+        <div class="Individualselection" id="categories">
+          <form name="form1">
+            <input type="checkbox" name="category_01" id="category_01" value="足場工事" class="category">
+            <label for="category_01">足場工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="しゅんせつ工事" class="category">
+            <label for="category_02">しゅんせつ工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="石工事" class="category">
+            <label for="category_03">石工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="造園工事" class="category">
+            <label for="category_04">造園工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="舗装工事" class="category">
+            <label for="category_05">舗装工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="土木工事" class="category">
+            <label for="category_06">土木工事</label>
+          </form>
+        </div>
+        <div class="Decision btn_close">
+          <input type="submit" value="決定" onclick="clickBtn1()">
+        </div>
+      </div>
+
+      <div class="Selectbox ChangeElem_Panel">
+        <div class="Selectall">
+          <input type="checkbox" id="category_all" name="category_all">
+          <label for="category_all">全てにチェックをつける</label>
+        </div>
+        <div class="Individualselection" id="categories">
+          <form name="form1">
+            <input type="checkbox" name="category_01" id="category_01" value="足場工事" class="category">
+            <label for="category_01">足場工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="しゅんせつ工事" class="category">
+            <label for="category_02">しゅんせつ工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="石工事" class="category">
+            <label for="category_03">石工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="造園工事" class="category">
+            <label for="category_04">造園工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="舗装工事" class="category">
+            <label for="category_05">舗装工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="土木工事" class="category">
+            <label for="category_06">土木工事</label>
+          </form>
+        </div>
+        <div class="Decision btn_close">
+          <input type="submit" value="決定" onclick="clickBtn1()">
+        </div>
+      </div>
+
+      <div class="Selectbox ChangeElem_Panel">
+        <div class="Selectall">
+          <input type="checkbox" id="category_all" name="category_all">
+          <label for="category_all">全てにチェックをつける</label>
+        </div>
+        <div class="Individualselection" id="categories">
+          <form name="form1">
+            <input type="checkbox" name="category_01" id="category_01" value="足場工事" class="category">
+            <label for="category_01">足場工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="しゅんせつ工事" class="category">
+            <label for="category_02">しゅんせつ工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="石工事" class="category">
+            <label for="category_03">石工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="造園工事" class="category">
+            <label for="category_04">造園工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="舗装工事" class="category">
+            <label for="category_05">舗装工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="土木工事" class="category">
+            <label for="category_06">土木工事</label>
+          </form>
+        </div>
+        <div class="Decision btn_close">
+          <input type="submit" value="決定" onclick="clickBtn1()">
+        </div>
+      </div>
+
+      <div class="Selectbox ChangeElem_Panel">
+        <div class="Selectall">
+          <input type="checkbox" id="category_all" name="category_all">
+          <label for="category_all">全てにチェックをつける</label>
+        </div>
+        <div class="Individualselection" id="categories">
+          <form name="form1">
+            <input type="checkbox" name="category_01" id="category_01" value="足場工事" class="category">
+            <label for="category_01">足場工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="しゅんせつ工事" class="category">
+            <label for="category_02">しゅんせつ工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="石工事" class="category">
+            <label for="category_03">石工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="造園工事" class="category">
+            <label for="category_04">造園工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="舗装工事" class="category">
+            <label for="category_05">舗装工事</label>
+            <input type="checkbox" name="category_01" id="category_01" value="土木工事" class="category">
+            <label for="category_06">土木工事</label>
+          </form>
+        </div>
+        <div class="Decision btn_close">
+          <input type="submit" value="決定" onclick="clickBtn1()">
+        </div>
+      </div>
+
+    </div>
+    </div>
+    </div>
+</div>
               <div class="industry_box_wrapper">
                 <a href="#">
                   <div class="select_box_inner">
