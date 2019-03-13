@@ -93,7 +93,8 @@ header {
     left: 0;
     width: 300px;
     display: -webkit-flex;
-    display: flex; }
+    display: flex;
+    z-index: 1; }
   .list_maincontents h2 {
     font-size: 30px;
     color: #6d6d6d; }
@@ -133,14 +134,15 @@ header {
   .list_maincontents .section_service_search_box {
     position: sticky;
     top: 314px;
-    left: 0; }
+    left: 0;
+    z-index: -1; }
     .list_maincontents .section_service_search_box ul.servise_list_wrapper {
       display: flex;
       justify-content: left;
       flex-wrap: wrap; }
     .list_maincontents .section_service_search_box li.servise_list_inner {
       font-size: 15px;
-      border: 1px solid #dddd;
+      border: 1px solid #d1d1d1;
       padding: 3px 20px;
       margin: 10px; }
       .list_maincontents .section_service_search_box li.servise_list_inner p {
@@ -149,7 +151,8 @@ header {
           opacity: 0.5; }
   .list_maincontents .feature_search_box {
     position: sticky;
-    top: 520px; }
+    top: 520px;
+    z-index: -1; }
     .list_maincontents .feature_search_box li.feature_search_inner {
       display: block;
       padding: 5px;
@@ -159,7 +162,11 @@ header {
         .list_maincontents .feature_search_box li.feature_search_inner p:hover {
           opacity: 0.5; }
   .list_maincontents main {
-    width: 980px; }
+    width: 980px;
+    z-index: 0;
+    position: relative;
+    top: 0;
+    left: 0; }
     .list_maincontents main .customer_list_wrap {
       width: 920px; }
       .list_maincontents main .customer_list_wrap .display_num_wrap {

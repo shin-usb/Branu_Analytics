@@ -9,8 +9,7 @@
     "sass": "node-sass ./showcase02/sass/index01.scss -r -o ./showcase02/css && node-sass ./showcase02/sass/index01.scss -r -o ./showcase02/css -w ",
     "sass": "node-sass ./study/sass/index.scss -r -o ./study/css && node-sass ./study/sass/index.scss -r -o ./study/css -w ",
     "sass": "node-sass ./branudmp/sass/index.scss -r -o ./branudmp/css && node-sass ./branudmp/sass/index.scss -r -o ./branudmp/css -w ",
-    "sass": "node-sass ./branudmp/sass/index2.scss -r -o ./branudmp/css && node-sass ./branudmp/sass/index2.scss -r -o ./branudmp/css -w ",
-    "sass": "node-sass ./branudmp/sass/index3.scss -r -o ./branudmp/css && node-sass ./branudmp/sass/index3.scss -r -o ./branudmp/css -w "
+    "sass": "node-sass ./branudmp/sass/index2.scss -r -o ./branudmp/css && node-sass ./branudmp/sass/index2.scss -r -o ./branudmp/css -w "
   },
   "author": "",
   "license": "ISC"
