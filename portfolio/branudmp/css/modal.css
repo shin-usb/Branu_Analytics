@@ -11,7 +11,7 @@
     background-color: rgba(0,0,0,0.7);
 }
 #modal_content{
-  width: 780px;
+  width: 850px;
   background: #fff;
   margin: 15% auto;
   padding: 10px;
@@ -44,7 +44,7 @@
 
 #modal form {
   display: flex;
-  width: 630px;
+  width: 700px;
   flex-wrap: wrap;
   align-items: center;
 }
