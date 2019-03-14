@@ -4,6 +4,10 @@ $(function(){
 	n01();
 	n02();
 	n03();
+	n04();
+	n05();
+	n06();
+	n07();
   clickBtn1();
 });
 
@@ -47,23 +51,85 @@ function n02() {
 
  /*全部チェック*/
 function n03() {
-  $('#category_all').on('click', function() {
-    $('.category').prop('checked', this.checked);
+  $('#category_all_construction').on('click', function() {
+    $('.construction_checkbox').prop('checked', this.checked);
   });
 
-  $('.category').on('click', function() {
+  $('.construction_checkbox').on('click', function() {
     if ($('#categories :checked').length == $('#categories :input').length){
-      $('#category_all').prop('checked', 'checked');
+      $('#category_all_construction').prop('checked', 'checked');
     }else{
-      $('#category_all').prop('checked', false);
+      $('#category_all_construction').prop('checked', false);
     }
   });
 
 }
 
+function n04() {
+  $('#category_all_shipping').on('click', function() {
+    $('.shipping_checkbox').prop('checked', this.checked);
+  });
+
+  $('.shipping_checkbox').on('click', function() {
+    if ($('#categories :checked').length == $('#categories :input').length){
+      $('#category_all_shipping').prop('checked', 'checked');
+    }else{
+      $('#category_all_shipping').prop('checked', false);
+    }
+  });
+
+}
+
+function n05() {
+  $('#category_all_manufacturing').on('click', function() {
+    $('.manufacturing_checkbox').prop('checked', this.checked);
+  });
+
+  $('.manufacturing_checkbox').on('click', function() {
+    if ($('#categories :checked').length == $('#categories :input').length){
+      $('#category_all_manufacturing').prop('checked', 'checked');
+    }else{
+      $('#category_all_manufacturing').prop('checked', false);
+    }
+  });
+
+}
+
+function n06() {
+  $('#category_all_wholesale').on('click', function() {
+    $('.wholesale_checkbox').prop('checked', this.checked);
+  });
+
+  $('.wholesale_checkbox').on('click', function() {
+    if ($('#categories :checked').length == $('#categories :input').length){
+      $('#category_all_wholesale').prop('checked', 'checked');
+    }else{
+      $('#category_all_wholesale').prop('checked', false);
+    }
+  });
+
+}
+
+function n07() {
+  $('#category_all_other').on('click', function() {
+    $('.other_checkbox').prop('checked', this.checked);
+  });
+
+  $('.other_checkbox').on('click', function() {
+    if ($('#categories :checked').length == $('#categories :input').length){
+      $('#category_all_other').prop('checked', 'checked');
+    }else{
+      $('#category_all_other').prop('checked', false);
+    }
+  });
+
+}
+
+
+
 function clickBtn1(){
 	const arr1 = [];
-	const category = document.form1[0].category_01;
+	const category = document.form1.category_01;
 
 	console.log("aaa")
 
