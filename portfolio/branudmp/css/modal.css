@@ -11,11 +11,11 @@
     background-color: rgba(0,0,0,0.7);
 }
 #modal_content{
-	width:500px;
-	background:#fff;
-	margin:15% auto;
-	padding:10px;
-	position:relative;
+  width: 780px;
+  background: #fff;
+  margin: 15% auto;
+  padding: 10px;
+  position: relative;
 	animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}
 }
 
@@ -43,11 +43,10 @@
 }
 
 #modal form {
-    display: flex;
-    justify-content: space-around;
-    width: 320px;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  width: 630px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .Selectbox_content1 {

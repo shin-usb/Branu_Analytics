@@ -65,9 +65,12 @@ function clickBtn1(){
 	const arr1 = [];
 	const category = document.form1[0].category_01;
 
+	console.log("aaa")
+
 	for (let i = 0; i < category.length; i++){
 		if(category[i].checked){ //(color1[i].checked === true)と同じ
 			arr1.push(category[i].value);
+			console.log(category[i].value)
 		}
 	}
 	document.getElementById("span1").textContent = arr1;
