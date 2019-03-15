@@ -383,113 +383,113 @@
                 <h3>推移</h3>
               </div>
             </div>
-              <div id="container">
-                <script type="text/javascript">
-                  Highcharts.chart('container', {
-                      chart: {
-                          zoomType: 'xy'
-                      },
-                      title: {
-                          text: 'BRANU Analytics'
-                      },
-                      subtitle: {
-                          text: '解析データ'
-                      },
-                      xAxis: [{
-                          categories: ['1月', '2月', '3月', '4月', '5月', '6月',
-                              '7月', '8月', '9月', '10月', '11月', '12月'],
-                          crosshair: true
-                      }],
-                      yAxis: [{ // Primary yAxis
-                          labels: {
-                              format: '{value}CV',
-                              style: {
-                                  color: Highcharts.getOptions().colors[2]
-                              }
-                          },
-                          title: {
-                              text: 'CV数',
-                              style: {
-                                  color: Highcharts.getOptions().colors[2]
-                              }
-                          },
-                          opposite: true
+            <div id="container">
+              <script type="text/javascript">
+                Highcharts.chart('container', {
+                  chart: {
+                    zoomType: 'xy'
+                  },
+                  title: {
+                    text: 'BRANU Analytics'
+                  },
+                  subtitle: {
+                    text: '解析データ'
+                  },
+                  xAxis: [{
+                    categories: ['1月', '2月', '3月', '4月', '5月', '6月',
+                      '7月', '8月', '9月', '10月', '11月', '12月'
+                    ],
+                    crosshair: true
+                  }],
+                  yAxis: [{ // Primary yAxis
+                    labels: {
+                      format: '{value}CV',
+                      style: {
+                        color: Highcharts.getOptions().colors[2]
+                      }
+                    },
+                    title: {
+                      text: 'CV数',
+                      style: {
+                        color: Highcharts.getOptions().colors[2]
+                      }
+                    },
+                    opposite: true
 
-                      }, { // Secondary yAxis
-                          gridLineWidth: 0,
-                          title: {
-                              text: '活用度',
-                              style: {
-                                  color: Highcharts.getOptions().colors[0]
-                              }
-                          },
-                          labels: {
-                              format: '{value} %',
-                              style: {
-                                  color: Highcharts.getOptions().colors[0]
-                              }
-                          }
+                  }, { // Secondary yAxis
+                    gridLineWidth: 0,
+                    title: {
+                      text: '活用度',
+                      style: {
+                        color: Highcharts.getOptions().colors[0]
+                      }
+                    },
+                    labels: {
+                      format: '{value} %',
+                      style: {
+                        color: Highcharts.getOptions().colors[0]
+                      }
+                    }
 
-                      }, { // Tertiary yAxis
-                          gridLineWidth: 0,
-                          title: {
-                              text: 'PV数',
-                              style: {
-                                  color: Highcharts.getOptions().colors[1]
-                              }
-                          },
-                          labels: {
-                              format: '{value} PV',
-                              style: {
-                                  color: Highcharts.getOptions().colors[1]
-                              }
-                          },
-                          opposite: true
-                      }],
-                      tooltip: {
-                          shared: true
-                      },
-                      legend: {
-                          layout: 'vertical',
-                          align: 'left',
-                          x: 80,
-                          verticalAlign: 'top',
-                          y: 55,
-                          floating: true,
-                          backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
-                      },
-                      series: [{
-                          name: '活用度',
-                          type: 'column',
-                          yAxis: 1,
-                          data: [80, 70, 66, 77, 40, 50, 33, 90, 70, 77, 66, 87],
-                          tooltip: {
-                              valueSuffix: ' ％'
-                          }
+                  }, { // Tertiary yAxis
+                    gridLineWidth: 0,
+                    title: {
+                      text: 'PV数',
+                      style: {
+                        color: Highcharts.getOptions().colors[1]
+                      }
+                    },
+                    labels: {
+                      format: '{value} PV',
+                      style: {
+                        color: Highcharts.getOptions().colors[1]
+                      }
+                    },
+                    opposite: true
+                  }],
+                  tooltip: {
+                    shared: true
+                  },
+                  legend: {
+                    layout: 'vertical',
+                    align: 'left',
+                    x: 80,
+                    verticalAlign: 'top',
+                    y: 55,
+                    floating: true,
+                    backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
+                  },
+                  series: [{
+                    name: '活用度',
+                    type: 'column',
+                    yAxis: 1,
+                    data: [80, 70, 66, 77, 40, 50, 33, 90, 70, 77, 66, 87],
+                    tooltip: {
+                      valueSuffix: ' ％'
+                    }
 
-                      }, {
-                          name: 'PV',
-                          type: 'spline',
-                          yAxis: 2,
-                          data: [80, 106, 101, 105, 112, 95, 100, 101, 113, 116, 118, 116],
-                          marker: {
-                              enabled: false
-                          },
-                          dashStyle: 'shortdot',
-                          tooltip: {
-                              valueSuffix: ' PV'
-                          }
+                  }, {
+                    name: 'PV',
+                    type: 'spline',
+                    yAxis: 2,
+                    data: [80, 106, 101, 105, 112, 95, 100, 101, 113, 116, 118, 116],
+                    marker: {
+                      enabled: false
+                    },
+                    dashStyle: 'shortdot',
+                    tooltip: {
+                      valueSuffix: ' PV'
+                    }
 
-                      }, {
-                          name: 'CV',
-                          type: 'spline',
-                          data: [0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 2, 0],
-                          tooltip: {
-                              valueSuffix: ' CV'
-                          }
-                      }]
-                  });
-
+                  }, {
+                    name: 'CV',
+                    type: 'spline',
+                    data: [0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 2, 0],
+                    tooltip: {
+                      valueSuffix: ' CV'
+                    }
+                  }]
+                });
               </script>
             </div>
           </div>
@@ -504,29 +504,30 @@
                 <h3>アクセスマップ</h3>
               </div>
             </div>
-            </div>
           </div>
         </div>
-        <div class="access_map">
-         <div class="access_map_wrapper">
-           <div class="access_map_inner">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5760052067176!2d139.72974981525226!3d35.66281658019863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b82b6bb7eb5%3A0xce57b7a1db8b89ee!2zQlJBTlXmoKrlvI_kvJrnpL4!5e0!3m2!1sja!2sjp!4v1552023780096" width="1280" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-           </div>
-           <div class="text_wrpper">
-             <a href="">
-               <div class="text_inner">
-                 <p>Google Mapで確認する</p>
-               </div>
-             </a>
-           </div>
-        </div>
-       </div>
       </div>
+      <div class="access_map">
+        <div class="access_map_wrapper">
+          <div class="access_map_inner">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5760052067176!2d139.72974981525226!3d35.66281658019863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b82b6bb7eb5%3A0xce57b7a1db8b89ee!2zQlJBTlXmoKrlvI_kvJrnpL4!5e0!3m2!1sja!2sjp!4v1552023780096"
+              width="1280" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+          <div class="text_wrpper">
+            <a href="">
+              <div class="text_inner">
+                <p>Google Mapで確認する</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+  </div>
 
 
   </main>
 
- </div>
+  </div>
 </body>
 
 </html>
