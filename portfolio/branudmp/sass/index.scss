@@ -12,25 +12,32 @@ body {
 
 header {
   @include baseCenter;
-  height: auto;
   background: $white;
-  padding: 0;
   position: relative;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  box-shadow: 0 0 25px 0 rgba(0,0,0,0.2);
+
+  .header_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   .headerlogo {
     position: relative;
     top: 0;
     left: 0;
-    background: $branuRed;
     display: inline-block;
-    color: $white;
-    width: 300px;
+    width: 230px;
     padding: 5px;
     text-align: center;
+
+    h1 {
+      color: $branuRed;
+    }
 
     &:hover {
       opacity: 0.8;
@@ -47,19 +54,11 @@ header {
     position: relative;
     top: 0;
     left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .section_searchwindow {
-    height: 80px;
-    display: flex;
-    align-items: center;
   }
 
   form#form1 {
-    height: 80px;
+    display: flex;
+    align-items: center;
   }
 
   input#sbox1 {
@@ -69,8 +68,9 @@ header {
   }
 
   input#sbtn1 {
-    position: absolute;
+    position: relative;
     top: 0;
+    left: 0;
     width: 45px;
     height: 45px;
     border-radius: 3px;
@@ -85,14 +85,38 @@ header {
       opacity: 0.8;
     }
   }
+
+  .list_botton {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    position: relative;
+    top: -15px;
+    left: 40px;
+    display: none;
+  }
+
+  button {
+    width: 120px;
+    border: 1px solid #d1d1d1;
+    border-radius: 40px;
+    height: 40px;
+  }
+
+  button:hover {
+    border: 1px solid $branuRed;
+    background: $branuRed;
+    color: $white;
+  }
 }
 
 .maincontents.content_wrpper {
   @include baseCenter;
 
   .list_link_contents {
-    width: 1000px;
+    width: 1280px;
     margin: auto;
+    margin-top: 60px;
     position: relative;
     top: 0;
     left: 0;
