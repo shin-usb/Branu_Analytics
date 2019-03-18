@@ -8,24 +8,28 @@ header {
   max-width: 1280px;
   width: 1280px;
   margin: 0 auto;
-  height: auto;
   background: #fff;
-  padding: 0;
   position: relative;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0; }
+  bottom: 0;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 60px; }
+  header .header_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
   header .headerlogo {
     position: relative;
     top: 0;
     left: 0;
-    background: #d3434a;
     display: inline-block;
-    color: #fff;
-    width: 300px;
+    width: 230px;
     padding: 5px;
     text-align: center; }
+    header .headerlogo h1 {
+      color: #d3434a; }
     header .headerlogo:hover {
       opacity: 0.8; }
   header span {
@@ -35,23 +39,18 @@ header {
   header .searchwindow_warpper {
     position: relative;
     top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  header .section_searchwindow {
-    height: 80px;
+    left: 0; }
+  header #Search_form {
     display: flex;
     align-items: center; }
-  header form#form1 {
-    height: 80px; }
-  header input#sbox1 {
+  header #search_word {
     background: white;
     border: 1px solid;
     width: 430px; }
-  header input#sbtn1 {
-    position: absolute;
+  header #sbtn1 {
+    position: relative;
     top: 0;
+    left: 0;
     width: 45px;
     height: 45px;
     border-radius: 3px;
@@ -61,7 +60,7 @@ header {
     background-repeat: no-repeat;
     background-size: 30px;
     background-color: #d3434a; }
-    header input#sbtn1:hover {
+    header #sbtn1:hover {
       opacity: 0.8; }
   header .list_botton {
     display: flex;
@@ -199,7 +198,7 @@ header {
               color: #000; }
       .list_maincontents main .customer_list_wrap .customer_list_box_wrap {
         width: 920px;
-        padding-left: 20px; }
+        padding-left: 50px; }
         .list_maincontents main .customer_list_wrap .customer_list_box_wrap .customer_list_box_inner {
           position: relative;
           top: 0;
@@ -254,7 +253,7 @@ header {
             height: 15px;
             border-radius: 3px;
             background: #000;
-            background-image: url(../img/search.png);
+            background-image: url("../img/search.png");
             background-position: center;
             background-repeat: no-repeat;
             background-size: 15px;
@@ -269,7 +268,7 @@ header {
             height: 15px;
             border-radius: 3px;
             background: #000;
-            background-image: url(../img/search.png);
+            background-image: url("../img/search.png");
             background-position: center;
             background-repeat: no-repeat;
             background-size: 15px;
@@ -284,7 +283,7 @@ header {
             height: 15px;
             border-radius: 3px;
             background: #000;
-            background-image: url(../img/search.png);
+            background-image: url("../img/search.png");
             background-position: center;
             background-repeat: no-repeat;
             background-size: 15px;
@@ -299,7 +298,7 @@ header {
             height: 15px;
             border-radius: 3px;
             background: #000;
-            background-image: url(../img/search.png);
+            background-image: url("../img/search.png");
             background-position: center;
             background-repeat: no-repeat;
             background-size: 15px;
@@ -314,7 +313,7 @@ header {
             height: 15px;
             border-radius: 3px;
             background: #000;
-            background-image: url(../img/search.png);
+            background-image: url("../img/search.png");
             background-position: center;
             background-repeat: no-repeat;
             background-size: 15px;
@@ -329,7 +328,7 @@ header {
             height: 15px;
             border-radius: 3px;
             background: #000;
-            background-image: url(../img/search.png);
+            background-image: url("../img/search.png");
             background-position: center;
             background-repeat: no-repeat;
             background-size: 15px;
@@ -344,7 +343,7 @@ header {
             height: 15px;
             border-radius: 3px;
             background: #000;
-            background-image: url(../img/search.png);
+            background-image: url("../img/search.png");
             background-position: center;
             background-repeat: no-repeat;
             background-size: 15px;
@@ -359,7 +358,7 @@ header {
             height: 15px;
             border-radius: 3px;
             background: #000;
-            background-image: url(../img/search.png);
+            background-image: url("../img/search.png");
             background-position: center;
             background-repeat: no-repeat;
             background-size: 15px;
