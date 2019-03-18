@@ -40,14 +40,14 @@ header {
     position: relative;
     top: 0;
     left: 0; }
-  header form#form1 {
+  header #Search_form {
     display: flex;
     align-items: center; }
-  header input#sbox1 {
+  header #search_word {
     background: white;
     border: 1px solid;
     width: 430px; }
-  header input#sbtn1 {
+  header #sbtn1 {
     position: relative;
     top: 0;
     left: 0;
@@ -60,7 +60,7 @@ header {
     background-repeat: no-repeat;
     background-size: 30px;
     background-color: #d3434a; }
-    header input#sbtn1:hover {
+    header #sbtn1:hover {
       opacity: 0.8; }
   header .list_botton {
     display: flex;
@@ -198,7 +198,7 @@ header {
               color: #000; }
       .list_maincontents main .customer_list_wrap .customer_list_box_wrap {
         width: 920px;
-        padding-left: 20px; }
+        padding-left: 50px; }
         .list_maincontents main .customer_list_wrap .customer_list_box_wrap .customer_list_box_inner {
           position: relative;
           top: 0;
@@ -253,7 +253,7 @@ header {
             height: 15px;
             border-radius: 3px;
             background: #000;
-            background-image: url(../img/search.png);
+            background-image: url("../img/search.png");
             background-position: center;
             background-repeat: no-repeat;
             background-size: 15px;
@@ -268,7 +268,7 @@ header {
             height: 15px;
             border-radius: 3px;
             background: #000;
-            background-image: url(../img/search.png);
+            background-image: url("../img/search.png");
             background-position: center;
             background-repeat: no-repeat;
             background-size: 15px;
@@ -283,7 +283,7 @@ header {
             height: 15px;
             border-radius: 3px;
             background: #000;
-            background-image: url(../img/search.png);
+            background-image: url("../img/search.png");
             background-position: center;
             background-repeat: no-repeat;
             background-size: 15px;
@@ -298,7 +298,7 @@ header {
             height: 15px;
             border-radius: 3px;
             background: #000;
-            background-image: url(../img/search.png);
+            background-image: url("../img/search.png");
             background-position: center;
             background-repeat: no-repeat;
             background-size: 15px;
@@ -313,7 +313,7 @@ header {
             height: 15px;
             border-radius: 3px;
             background: #000;
-            background-image: url(../img/search.png);
+            background-image: url("../img/search.png");
             background-position: center;
             background-repeat: no-repeat;
             background-size: 15px;
@@ -328,7 +328,7 @@ header {
             height: 15px;
             border-radius: 3px;
             background: #000;
-            background-image: url(../img/search.png);
+            background-image: url("../img/search.png");
             background-position: center;
             background-repeat: no-repeat;
             background-size: 15px;
@@ -343,7 +343,7 @@ header {
             height: 15px;
             border-radius: 3px;
             background: #000;
-            background-image: url(../img/search.png);
+            background-image: url("../img/search.png");
             background-position: center;
             background-repeat: no-repeat;
             background-size: 15px;
@@ -358,7 +358,7 @@ header {
             height: 15px;
             border-radius: 3px;
             background: #000;
-            background-image: url(../img/search.png);
+            background-image: url("../img/search.png");
             background-position: center;
             background-repeat: no-repeat;
             background-size: 15px;
