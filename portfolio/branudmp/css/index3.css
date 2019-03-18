@@ -39,14 +39,14 @@ body {
     position: relative;
     top: 0;
     left: 0; }
-  #details header form#form1 {
+  #details header #Search_form {
     display: flex;
     align-items: center; }
-  #details header input#sbox1 {
+  #details header #search_word {
     background: white;
     border: 1px solid;
     width: 430px; }
-  #details header input#sbtn1 {
+  #details header #sbtn1 {
     position: relative;
     top: 0;
     left: 0;
@@ -59,7 +59,7 @@ body {
     background-repeat: no-repeat;
     background-size: 30px;
     background-color: #d3434a; }
-    #details header input#sbtn1:hover {
+    #details header #sbtn1:hover {
       opacity: 0.8; }
   #details header .list_botton {
     display: flex;
