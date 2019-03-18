@@ -43,7 +43,7 @@ header {
   header #Search_form {
     display: flex;
     align-items: center; }
-  header #sbox1 {
+  header #search_word {
     background: white;
     border: 1px solid;
     width: 430px; }
