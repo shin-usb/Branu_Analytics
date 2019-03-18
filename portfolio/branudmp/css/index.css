@@ -10,6 +10,7 @@ header {
   margin: 0 auto;
   background: #fff;
   position: relative;
+  display: flex;
   top: 0;
   left: 0;
   right: 0;
@@ -39,14 +40,14 @@ header {
     position: relative;
     top: 0;
     left: 0; }
-  header form#form1 {
+  header #Search_form {
     display: flex;
     align-items: center; }
-  header input#sbox1 {
+  header #sbox1 {
     background: white;
     border: 1px solid;
     width: 430px; }
-  header input#sbtn1 {
+  header #sbtn1 {
     position: relative;
     top: 0;
     left: 0;
@@ -59,7 +60,7 @@ header {
     background-repeat: no-repeat;
     background-size: 30px;
     background-color: #d3434a; }
-    header input#sbtn1:hover {
+    header #sbtn1:hover {
       opacity: 0.8; }
   header .list_botton {
     display: flex;
