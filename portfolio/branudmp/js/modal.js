@@ -1,17 +1,17 @@
  /*modal*/
 
 $(function(){
-	n01();
-	n02();
-	n03();
-	n04();
-	n05();
-	n06();
-	n07();
-  clickBtn1();
+	modal();
+	tabSwitch();
+	allCheck01();
+	allCheck02();
+	allCheck03();
+	allCheck04();
+	allCheck05();
+  clickBtn();
 });
 
-function n01(){
+function modal(){
 	var modal = $('#modal'),
 	    modalContent = $('#modal_content'),
 	    btnOpen = $("#btn_open"),
@@ -30,7 +30,7 @@ function n01(){
 
  /*タブの切り替え*/
 
-function n02() {
+function tabSwitch() {
   /*初期表示*/
   $('.ChangeElem_Panel').hide();
   $('.ChangeElem_Panel').eq(0).show();
@@ -50,7 +50,7 @@ function n02() {
 
 
  /*全部チェック*/
- function n03(){
+ function allCheck01(){
    $('#category_all_construction').on('click', function() {
      $('.construction_checkbox').prop('checked', this.checked);
    });
@@ -64,7 +64,7 @@ function n02() {
    });
  }
 
-function n04() {
+function allCheck02() {
   $('#category_all_shipping').on('click', function() {
     $('.shipping_checkbox').prop('checked', this.checked);
   });
@@ -79,7 +79,7 @@ function n04() {
 
 }
 
-function n05() {
+function allCheck03() {
   $('#category_all_manufacturing').on('click', function() {
     $('.manufacturing_checkbox').prop('checked', this.checked);
   });
@@ -94,7 +94,7 @@ function n05() {
 
 }
 
-function n06() {
+function allCheck04() {
   $('#category_all_wholesale').on('click', function() {
     $('.wholesale_checkbox').prop('checked', this.checked);
   });
@@ -109,7 +109,7 @@ function n06() {
 
 }
 
-function n07() {
+function allCheck05() {
   $('#category_all_other').on('click', function() {
     $('.other_checkbox').prop('checked', this.checked);
   });
