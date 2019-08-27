@@ -12,7 +12,7 @@
 
 <body>
 
-  <div class="top_contents" id="ashboard">
+  <div class="top_contents" id="dashboard">
     <header>
       <div class="headerlogo">
         <a href="">
@@ -25,35 +25,32 @@
       </div>
       <div class="searchwindow_warpper">
         <div class="section_searchwindow">
-          <form id="form1" action="自分のサイトURL" method="get">
-            <input id="sbox1" id="s" name="s" type="search" placeholder="キーワードを入力" />
+          <form id="Search_form" action="自分のサイトURL" method="get">
+            <input id="search_word" name="search_word" type="search" placeholder="キーワードを入力" />
             <input id="sbtn1" type="submit" value="" />
           </form>
-        </div>
-        <div class="list_botton">
-          <button type="button" name="button">案件一覧</button>
         </div>
       </div>
     </header>
 
-<div class="maincontents content_wrpper">
-  <div class="list_link_contents">
-    <a href="">
-      <div class="section_list_link">
-        <div class="section_logo">
-          <div class="section_logo_bg" style="background-image: url('img/branu_logo.png');"></div>
-        </div>
-        <div class="text_warpper">
-          <div class="text_inner">
-            <h2>Analytics</h2>
+    <div class="maincontents content_wrpper">
+      <div class="list_link_contents">
+        <a href="">
+          <div class="section_list_link">
+            <div class="section_logo">
+              <div class="section_logo_bg" style="background-image: url('img/branu_logo.png');"></div>
+            </div>
+            <div class="text_warpper">
+              <div class="text_inner">
+                <h2>Analytics</h2>
+              </div>
+            </div>
           </div>
-        </div>
+          <div class="list_link_botton">
+            <button type="button" name="button">顧客を探す</button>
+          </div>
+        </a>
       </div>
-      <div class="list_link_botton">
-        <button type="button" name="button">顧客を探す</button>
-      </div>
-    </a>
-  </div>
 
 
       <div class="sales_search_contents">
@@ -380,58 +377,465 @@
         </div>
       </div>
 
-<div class="recommend_content">
-      <div class="release_contents">
-        <div class="relase_wrpper">
-          <div class="section_relase">
-            <div class="text_warpper">
-              <div class="text_inner">
-                <h3>最近公開したユーザー</h3>
+      <div class="recommend_content">
+        <div class="release_contents">
+          <div class="relase_wrpper">
+            <div class="section_relase">
+              <div class="text_warpper">
+                <div class="text_inner">
+                  <h3>最近公開したユーザー</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="release_contents_inner">
+              <div class="relase_box_contents">
+                <ul class="relase_list">
+                  <li class="relase_box">
+                    <div class="relase-imge-frame-bg">
+                      <a href="">
+                        <div class="relase_bg" style="background-image:url('img/thumbnail.png');"></div>
+                      </a>
+                    </div>
+                    <div class="customer_information">
+                      <div class="introduction_service">
+                        <div class="eat">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>eat</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="parabola">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>parabola</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="decade">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>decade</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="investment">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>運用</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <dl>
+                        <dd class="information_company_name">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>会社名：株式会社郁栄</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_industry">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>業種：配管工事</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_relase_date">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>公開日：2019/01/01</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_annualsales">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>年商：10億円</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_people">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>社員数：15人</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_address">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>住所：東京都港区六本木</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_plan">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>保守プラン：運用10万プラン</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_rank">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>ランク：★★★★☆</p>
+                            </div>
+                          </div>
+                        </dd>
+                      </dl>
+                    </div>
+                  </li>
+                  <li class="relase_box">
+                    <div class="relase-imge-frame-bg">
+                      <a href="">
+                        <div class="relase_bg" style="background-image:url('img/thumbnail.png');"></div>
+                      </a>
+                    </div>
+                    <div class="customer_information">
+                      <div class="introduction_service">
+                        <div class="eat">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>eat</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="parabola">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>parabola</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="decade">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>decade</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="investment">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>運用</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <dl>
+                        <dd class="information_company_name">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>会社名：株式会社郁栄</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_industry">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>業種：配管工事</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_relase_date">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>公開日：2019/01/01</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_annualsales">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>年商：10億円</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_people">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>社員数：15人</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_address">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>住所：東京都港区六本木</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_plan">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>保守プラン：運用10万プラン</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_rank">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>ランク：★★★★☆</p>
+                            </div>
+                          </div>
+                        </dd>
+                      </dl>
+                    </div>
+                  </li>
+                  <li class="relase_box">
+                    <div class="relase-imge-frame-bg">
+                      <a href="#">
+                        <div class="relase_bg" style="background-image:url('img/thumbnail.png');"></div>
+                      </a>
+                    </div>
+                    <div class="customer_information">
+                      <div class="introduction_service">
+                        <div class="eat">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>eat</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="parabola">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>parabola</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="decade">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>decade</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="investment">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>運用</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <dl>
+                        <dd class="information_company_name">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>会社名：株式会社郁栄</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_industry">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>業種：配管工事</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_relase_date">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>公開日：2019/01/01</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_annualsales">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>年商：10億円</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_people">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>社員数：15人</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_address">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>住所：東京都港区六本木</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_plan">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>保守プラン：運用10万プラン</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_rank">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>ランク：★★★★☆</p>
+                            </div>
+                          </div>
+                        </dd>
+                      </dl>
+                    </div>
+                  </li>
+                  <li class="relase_box">
+                    <div class="relase-imge-frame-bg">
+                      <a href="">
+                        <div class="relase_bg" style="background-image:url('img/thumbnail.png');"></div>
+                      </a>
+                    </div>
+                    <div class="customer_information">
+                      <div class="introduction_service">
+                        <div class="eat">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>eat</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="parabola">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>parabola</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="decade">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>decade</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="investment">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>運用</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <dl>
+                        <dd class="information_company_name">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>会社名：株式会社郁栄</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_industry">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>業種：配管工事</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_relase_date">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>公開日：2019/01/01</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_annualsales">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>年商：10億円</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_people">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>社員数：15人</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_address">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>住所：東京都港区六本木</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_plan">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>保守プラン：運用10万プラン</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_rank">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>ランク：★★★★☆</p>
+                            </div>
+                          </div>
+                        </dd>
+                      </dl>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="release_contents_inner">
-            <div class="relase_box_contents">
-              <ul class="relase_list">
-                <li class="relase_box">
-                  <div class="relase-imge-frame-bg">
-                    <a href="">
-                    <div class="relase_bg" style="background-image:url('img/thumbnail.png');"></div>
-                    </a>
-                  </div>
-                  <div class="customer_information">
-                    <div class="introduction_service">
-                      <div class="eat">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>eat</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="parabola">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>parabola</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="decade">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>decade</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="investment">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>運用</span>
-                          </div>
-                        </div>
-                      </div>
+        <div class="conversion_rate_contents">
+          <div class="conversion_rate_wrpper">
+            <div class="section_relase">
+              <div class="text_warpper">
+                <div class="text_inner">
+                  <h3>CV率の高いユーザー</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="conversion_rate_inner">
+              <div class="conversion_rate_contents">
+                <ul class="conversion_rate_list">
+                  <li class="conversion_rate_box">
+                    <div class="conversion-imge-frame-bg">
+                      <a href="">
+                        <div class="conversion_bg" style="background-image:url('img/thumbnail.png');"></div>
+                      </a>
                     </div>
-                    <dl>
+                    <div class="customer_information">
+                      <div class="introduction_service">
+                        <div class="eat">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>eat</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="parabola">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>parabola</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="decade">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>decade</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="investment">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>運用</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <dl>
                         <dd class="information_company_name">
                           <div class="information_text_warpper">
                             <div class="information_text_inner">
@@ -488,47 +892,47 @@
                             </div>
                           </div>
                         </dd>
-                    </dl>
-                  </div>
-                </li>
-                <li class="relase_box">
-                  <div class="relase-imge-frame-bg">
-                    <a href="">
-                    <div class="relase_bg" style="background-image:url('img/thumbnail.png');"></div>
-                    </a>
-                  </div>
-                  <div class="customer_information">
-                    <div class="introduction_service">
-                      <div class="eat">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>eat</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="parabola">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>parabola</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="decade">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>decade</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="investment">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>運用</span>
-                          </div>
-                        </div>
-                      </div>
+                      </dl>
                     </div>
-                    <dl>
+                  </li>
+                  <li class="conversion_rate_box">
+                    <div class="conversion-imge-frame-bg">
+                      <a href="">
+                        <div class="conversion_bg" style="background-image:url('img/thumbnail.png');"></div>
+                      </a>
+                    </div>
+                    <div class="customer_information">
+                      <div class="introduction_service">
+                        <div class="eat">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>eat</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="parabola">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>parabola</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="decade">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>decade</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="investment">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>運用</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <dl>
                         <dd class="information_company_name">
                           <div class="information_text_warpper">
                             <div class="information_text_inner">
@@ -585,47 +989,47 @@
                             </div>
                           </div>
                         </dd>
-                    </dl>
-                  </div>
-                </li>
-                <li class="relase_box">
-                  <div class="relase-imge-frame-bg">
-                    <a href="#">
-                    <div class="relase_bg" style="background-image:url('img/thumbnail.png');"></div>
-                    </a>
-                  </div>
-                  <div class="customer_information">
-                    <div class="introduction_service">
-                      <div class="eat">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>eat</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="parabola">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>parabola</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="decade">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>decade</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="investment">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>運用</span>
-                          </div>
-                        </div>
-                      </div>
+                      </dl>
                     </div>
-                    <dl>
+                  </li>
+                  <li class="conversion_rate_box">
+                    <div class="conversion-imge-frame-bg">
+                      <a href="#">
+                        <div class="conversion_bg" style="background-image:url('img/thumbnail.png');"></div>
+                      </a>
+                    </div>
+                    <div class="customer_information">
+                      <div class="introduction_service">
+                        <div class="eat">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>eat</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="parabola">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>parabola</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="decade">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>decade</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="investment">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>運用</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <dl>
                         <dd class="information_company_name">
                           <div class="information_text_warpper">
                             <div class="information_text_inner">
@@ -682,47 +1086,47 @@
                             </div>
                           </div>
                         </dd>
-                    </dl>
-                  </div>
-                </li>
-                <li class="relase_box">
-                  <div class="relase-imge-frame-bg">
-                    <a href="">
-                    <div class="relase_bg" style="background-image:url('img/thumbnail.png');"></div>
-                    </a>
-                  </div>
-                  <div class="customer_information">
-                    <div class="introduction_service">
-                      <div class="eat">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>eat</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="parabola">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>parabola</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="decade">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>decade</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="investment">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>運用</span>
-                          </div>
-                        </div>
-                      </div>
+                      </dl>
                     </div>
-                    <dl>
+                  </li>
+                  <li class="conversion_rate_box">
+                    <div class="conversion-imge-frame-bg">
+                      <a href="">
+                        <div class="conversion_bg" style="background-image:url('img/thumbnail.png');"></div>
+                      </a>
+                    </div>
+                    <div class="customer_information">
+                      <div class="introduction_service">
+                        <div class="eat">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>eat</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="parabola">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>parabola</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="decade">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>decade</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="investment">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>運用</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <dl>
                         <dd class="information_company_name">
                           <div class="information_text_warpper">
                             <div class="information_text_inner">
@@ -779,829 +1183,422 @@
                             </div>
                           </div>
                         </dd>
-                    </dl>
-                  </div>
-                </li>
-              </ul>
+                      </dl>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="updated_user_contents">
+          <div class="updated_user_wrpper">
+            <div class="section_relase">
+              <div class="text_warpper">
+                <div class="text_inner">
+                  <h3>最近更新したユーザー</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="updated_user_inner">
+              <div class="updated_user_contents">
+                <ul class="updated_user_list">
+                  <li class="updated_user_box">
+                    <div class="update-user-imge-frame-bg">
+                      <a href="">
+                        <div class="updated_user_bg" style="background-image:url('img/thumbnail.png');"></div>
+                      </a>
+                    </div>
+                    <div class="customer_information">
+                      <div class="introduction_service">
+                        <div class="eat">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>eat</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="parabola">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>parabola</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="decade">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>decade</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="investment">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>運用</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <dl>
+                        <dd class="information_company_name">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>会社名：株式会社郁栄</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_industry">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>業種：配管工事</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_relase_date">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>公開日：2019/01/01</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_annualsales">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>年商：10億円</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_people">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>社員数：15人</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_address">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>住所：東京都港区六本木</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_plan">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>保守プラン：運用10万プラン</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_rank">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>ランク：★★★★☆</p>
+                            </div>
+                          </div>
+                        </dd>
+                      </dl>
+                    </div>
+                  </li>
+                  <li class="updated_user_box">
+                    <div class="updated-user-imge-frame-bg">
+                      <a href="">
+                        <div class="updated_user_bg" style="background-image:url('img/thumbnail.png');"></div>
+                      </a>
+                    </div>
+                    <div class="customer_information">
+                      <div class="introduction_service">
+                        <div class="eat">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>eat</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="parabola">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>parabola</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="decade">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>decade</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="investment">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>運用</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <dl>
+                        <dd class="information_company_name">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>会社名：株式会社郁栄</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_industry">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>業種：配管工事</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_relase_date">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>公開日：2019/01/01</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_annualsales">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>年商：10億円</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_people">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>社員数：15人</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_address">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>住所：東京都港区六本木</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_plan">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>保守プラン：運用10万プラン</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_rank">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>ランク：★★★★☆</p>
+                            </div>
+                          </div>
+                        </dd>
+                      </dl>
+                    </div>
+                  </li>
+                  <li class="updated_user_box">
+                    <div class="updated-user-imge-frame-bg">
+                      <a href="#">
+                        <div class="updated_user_bg" style="background-image:url('img/thumbnail.png');"></div>
+                      </a>
+                    </div>
+                    <div class="customer_information">
+                      <div class="introduction_service">
+                        <div class="eat">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>eat</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="parabola">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>parabola</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="decade">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>decade</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="investment">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>運用</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <dl>
+                        <dd class="information_company_name">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>会社名：株式会社郁栄</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_industry">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>業種：配管工事</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_relase_date">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>公開日：2019/01/01</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_annualsales">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>年商：10億円</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_people">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>社員数：15人</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_address">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>住所：東京都港区六本木</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_plan">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>保守プラン：運用10万プラン</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_rank">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>ランク：★★★★☆</p>
+                            </div>
+                          </div>
+                        </dd>
+                      </dl>
+                    </div>
+                  </li>
+                  <li class="updated_user_box">
+                    <div class="updated-user-imge-frame-bg">
+                      <a href="">
+                        <div class="updated_user_bg" style="background-image:url('img/thumbnail.png');"></div>
+                      </a>
+                    </div>
+                    <div class="customer_information">
+                      <div class="introduction_service">
+                        <div class="eat">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>eat</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="parabola">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>parabola</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="decade">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>decade</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="investment">
+                          <div class="introduction_text_wrapper">
+                            <div class="introduction_text_inner">
+                              <span>運用</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <dl>
+                        <dd class="information_company_name">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>会社名：株式会社郁栄</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_industry">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>業種：配管工事</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_relase_date">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>公開日：2019/01/01</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_annualsales">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>年商：10億円</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_people">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>社員数：15人</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_address">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>住所：東京都港区六本木</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_plan">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>保守プラン：運用10万プラン</p>
+                            </div>
+                          </div>
+                        </dd>
+                        <dd class="information_rank">
+                          <div class="information_text_warpper">
+                            <div class="information_text_inner">
+                              <p>ランク：★★★★☆</p>
+                            </div>
+                          </div>
+                        </dd>
+                      </dl>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="conversion_rate_contents">
-        <div class="conversion_rate_wrpper">
-          <div class="section_relase">
-            <div class="text_warpper">
-              <div class="text_inner">
-                <h3>CV率の高いユーザー</h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="conversion_rate_inner">
-            <div class="conversion_rate_contents">
-              <ul class="conversion_rate_list">
-                <li class="conversion_rate_box">
-                  <div class="conversion-imge-frame-bg">
-                    <a href="">
-                    <div class="conversion_bg" style="background-image:url('img/thumbnail.png');"></div>
-                    </a>
-                  </div>
-                  <div class="customer_information">
-                    <div class="introduction_service">
-                      <div class="eat">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>eat</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="parabola">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>parabola</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="decade">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>decade</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="investment">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>運用</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <dl>
-                        <dd class="information_company_name">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>会社名：株式会社郁栄</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_industry">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>業種：配管工事</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_relase_date">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>公開日：2019/01/01</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_annualsales">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>年商：10億円</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_people">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>社員数：15人</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_address">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>住所：東京都港区六本木</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_plan">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>保守プラン：運用10万プラン</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_rank">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>ランク：★★★★☆</p>
-                            </div>
-                          </div>
-                        </dd>
-                    </dl>
-                  </div>
-                </li>
-                <li class="conversion_rate_box">
-                  <div class="conversion-imge-frame-bg">
-                    <a href="">
-                    <div class="conversion_bg" style="background-image:url('img/thumbnail.png');"></div>
-                    </a>
-                  </div>
-                  <div class="customer_information">
-                    <div class="introduction_service">
-                      <div class="eat">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>eat</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="parabola">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>parabola</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="decade">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>decade</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="investment">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>運用</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <dl>
-                        <dd class="information_company_name">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>会社名：株式会社郁栄</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_industry">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>業種：配管工事</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_relase_date">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>公開日：2019/01/01</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_annualsales">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>年商：10億円</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_people">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>社員数：15人</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_address">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>住所：東京都港区六本木</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_plan">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>保守プラン：運用10万プラン</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_rank">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>ランク：★★★★☆</p>
-                            </div>
-                          </div>
-                        </dd>
-                    </dl>
-                  </div>
-                </li>
-                <li class="conversion_rate_box">
-                  <div class="conversion-imge-frame-bg">
-                    <a href="#">
-                    <div class="conversion_bg" style="background-image:url('img/thumbnail.png');"></div>
-                    </a>
-                  </div>
-                  <div class="customer_information">
-                    <div class="introduction_service">
-                      <div class="eat">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>eat</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="parabola">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>parabola</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="decade">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>decade</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="investment">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>運用</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <dl>
-                        <dd class="information_company_name">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>会社名：株式会社郁栄</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_industry">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>業種：配管工事</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_relase_date">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>公開日：2019/01/01</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_annualsales">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>年商：10億円</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_people">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>社員数：15人</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_address">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>住所：東京都港区六本木</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_plan">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>保守プラン：運用10万プラン</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_rank">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>ランク：★★★★☆</p>
-                            </div>
-                          </div>
-                        </dd>
-                    </dl>
-                  </div>
-                </li>
-                <li class="conversion_rate_box">
-                  <div class="conversion-imge-frame-bg">
-                    <a href="">
-                    <div class="conversion_bg" style="background-image:url('img/thumbnail.png');"></div>
-                    </a>
-                  </div>
-                  <div class="customer_information">
-                    <div class="introduction_service">
-                      <div class="eat">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>eat</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="parabola">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>parabola</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="decade">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>decade</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="investment">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>運用</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <dl>
-                        <dd class="information_company_name">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>会社名：株式会社郁栄</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_industry">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>業種：配管工事</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_relase_date">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>公開日：2019/01/01</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_annualsales">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>年商：10億円</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_people">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>社員数：15人</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_address">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>住所：東京都港区六本木</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_plan">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>保守プラン：運用10万プラン</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_rank">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>ランク：★★★★☆</p>
-                            </div>
-                          </div>
-                        </dd>
-                    </dl>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="updated_user_contents">
-        <div class="updated_user_wrpper">
-          <div class="section_relase">
-            <div class="text_warpper">
-              <div class="text_inner">
-                <h3>最近更新したユーザー</h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="updated_user_inner">
-            <div class="updated_user_contents">
-              <ul class="updated_user_list">
-                <li class="updated_user_box">
-                  <div class="update-user-imge-frame-bg">
-                    <a href="">
-                    <div class="updated_user_bg" style="background-image:url('img/thumbnail.png');"></div>
-                    </a>
-                  </div>
-                  <div class="customer_information">
-                    <div class="introduction_service">
-                      <div class="eat">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>eat</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="parabola">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>parabola</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="decade">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>decade</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="investment">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>運用</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <dl>
-                        <dd class="information_company_name">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>会社名：株式会社郁栄</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_industry">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>業種：配管工事</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_relase_date">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>公開日：2019/01/01</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_annualsales">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>年商：10億円</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_people">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>社員数：15人</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_address">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>住所：東京都港区六本木</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_plan">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>保守プラン：運用10万プラン</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_rank">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>ランク：★★★★☆</p>
-                            </div>
-                          </div>
-                        </dd>
-                    </dl>
-                  </div>
-                </li>
-                <li class="updated_user_box">
-                  <div class="updated-user-imge-frame-bg">
-                    <a href="">
-                    <div class="updated_user_bg" style="background-image:url('img/thumbnail.png');"></div>
-                    </a>
-                  </div>
-                  <div class="customer_information">
-                    <div class="introduction_service">
-                      <div class="eat">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>eat</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="parabola">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>parabola</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="decade">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>decade</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="investment">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>運用</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <dl>
-                        <dd class="information_company_name">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>会社名：株式会社郁栄</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_industry">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>業種：配管工事</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_relase_date">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>公開日：2019/01/01</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_annualsales">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>年商：10億円</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_people">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>社員数：15人</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_address">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>住所：東京都港区六本木</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_plan">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>保守プラン：運用10万プラン</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_rank">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>ランク：★★★★☆</p>
-                            </div>
-                          </div>
-                        </dd>
-                    </dl>
-                  </div>
-                </li>
-                <li class="updated_user_box">
-                  <div class="updated-user-imge-frame-bg">
-                    <a href="#">
-                    <div class="updated_user_bg" style="background-image:url('img/thumbnail.png');"></div>
-                    </a>
-                  </div>
-                  <div class="customer_information">
-                    <div class="introduction_service">
-                      <div class="eat">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>eat</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="parabola">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>parabola</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="decade">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>decade</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="investment">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>運用</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <dl>
-                        <dd class="information_company_name">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>会社名：株式会社郁栄</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_industry">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>業種：配管工事</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_relase_date">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>公開日：2019/01/01</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_annualsales">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>年商：10億円</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_people">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>社員数：15人</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_address">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>住所：東京都港区六本木</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_plan">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>保守プラン：運用10万プラン</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_rank">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>ランク：★★★★☆</p>
-                            </div>
-                          </div>
-                        </dd>
-                    </dl>
-                  </div>
-                </li>
-                <li class="updated_user_box">
-                  <div class="updated-user-imge-frame-bg">
-                    <a href="">
-                    <div class="updated_user_bg" style="background-image:url('img/thumbnail.png');"></div>
-                    </a>
-                  </div>
-                  <div class="customer_information">
-                    <div class="introduction_service">
-                      <div class="eat">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>eat</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="parabola">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>parabola</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="decade">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>decade</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="investment">
-                        <div class="introduction_text_wrapper">
-                          <div class="introduction_text_inner">
-                            <span>運用</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <dl>
-                        <dd class="information_company_name">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>会社名：株式会社郁栄</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_industry">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>業種：配管工事</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_relase_date">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>公開日：2019/01/01</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_annualsales">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>年商：10億円</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_people">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>社員数：15人</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_address">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>住所：東京都港区六本木</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_plan">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>保守プラン：運用10万プラン</p>
-                            </div>
-                          </div>
-                        </dd>
-                        <dd class="information_rank">
-                          <div class="information_text_warpper">
-                            <div class="information_text_inner">
-                              <p>ランク：★★★★☆</p>
-                            </div>
-                          </div>
-                        </dd>
-                    </dl>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-</div>
 
 
 
